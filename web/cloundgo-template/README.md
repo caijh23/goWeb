@@ -96,3 +96,4 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/unknown
 #### 拓展任务
 对于拓展任务我写了博客，然后gbk转码代码还未测试，这边是代码链接https://github.com/caijh23/goWeb/tree/master/web/negroni-gbk</br>
 这边是博客链接
+http://blog.csdn.net/caijhBlog/article/details/78620245
