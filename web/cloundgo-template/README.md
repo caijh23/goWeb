@@ -2,17 +2,16 @@
 服务计算作业用 Go 开发 web 应用程序 cloudgo-io
 ### 要求
 #### 基本要求
-<li>支持静态文件服务</li>
-<li>支持简单 js 访问</li>
-<li>提交表单，并输出一个表格</li>
-<li>对 /unknown 给出开发中的提示，返回码 5xx</li>
-</br>
+##### 支持静态文件服务
+##### 支持简单 js 访问
+##### 提交表单，并输出一个表格
+##### 对 /unknown 给出开发中的提示，返回码 5xx
 #### 提高要求
-<li>分析阅读 gzip 过滤器的源码（就一个文件 126 行）</li>
-<li>编写中间件，使得用户可以使用 gb2312 或 gbk 字符编码的浏览器提交表单、显示网页。（服务器模板统一用 utf-8）</li>
+##### 分析阅读 gzip 过滤器的源码（就一个文件 126 行）
+##### 编写中间件，使得用户可以使用 gb2312 或 gbk 字符编码的浏览器提交表单、显示网页。（服务器模板统一用 utf-8）
 </br>
 #### 实现情况
-a.首先是静态文件服务
+a.首先是静态文件服务</br>
 ```
 caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
 *   Trying ::1...
@@ -50,7 +49,7 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
 * Connection #0 to host localhost left intact
 }
 ```
-b.支持简单的js访问
+b.支持简单的js访问</br>
 ```
 caijh@caijh-PC:~$ curl -v http://localhost:8080/js
 *   Trying ::1...
@@ -75,7 +74,7 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/js
 ![Alt text](./pic/1511446723010.png)
 ![Alt text](./pic/1511446743418.png)
 </br>
-对 /unknown 给出开发中的提示，返回码 5xx
+对 /unknown 给出开发中的提示，返回码 5xx</br>
 ```
 caijh@caijh-PC:~$ curl -v http://localhost:8080/unknown
 *   Trying ::1...
