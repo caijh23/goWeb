@@ -9,9 +9,9 @@
 #### 提高要求
 - 分析阅读 gzip 过滤器的源码（就一个文件 126 行）
 - 编写中间件，使得用户可以使用 gb2312 或 gbk 字符编码的浏览器提交表单、显示网页。（服务器模板统一用 utf-8）
-</br>
+
 #### 实现情况
-a.首先是静态文件服务</br>
+a.首先是静态文件服务
 ```
 caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
 *   Trying ::1...
@@ -94,4 +94,5 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/unknown
 * Connection #0 to host localhost left intact
 ```
 #### 拓展任务
-对于拓展任务我写了博客，然后gbk转码代码还未测试，这边是代码链接https://github.com/caijh23/goWeb/tree/master/web/negroni-gbk，这边是博客链接
+对于拓展任务我写了博客，然后gbk转码代码还未测试，这边是代码链接https://github.com/caijh23/goWeb/tree/master/web/negroni-gbk</br>
+这边是博客链接
