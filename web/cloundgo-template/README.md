@@ -2,15 +2,6 @@
 服务计算作业用 Go 开发 web 应用程序 cloudgo-io
 ### 要求
 #### 基本要求
-<<<<<<< HEAD
-<li>支持静态文件服务</li>
-<li>支持简单 js 访问</li>
-<li>提交表单，并输出一个表格</li>
-<li>对 /unknown 给出开发中的提示，返回码 5xx</li>
-#### 提高要求
-<li>分析阅读 gzip 过滤器的源码（就一个文件 126 行）</li>
-<li>编写中间件，使得用户可以使用 gb2312 或 gbk 字符编码的浏览器提交表单、显示网页。（服务器模板统一用 utf-8）</li>
-=======
 - 支持静态文件服务
 - 支持简单 js 访问
 - 提交表单，并输出一个表格
@@ -19,7 +10,15 @@
 - 分析阅读 gzip 过滤器的源码（就一个文件 126 行）
 - 编写中间件，使得用户可以使用 gb2312 或 gbk 字符编码的浏览器提交表单、显示网页。（服务器模板统一用 utf-8）
 
->>>>>>> 6d9d0fe68d5b1617654e596885c4e9b95b0ae5b9
+#### 实现情况
+a.首先是静态文件服务
+```
+caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
+*   Trying ::1...
+* Connected to localhost (::1) port 8080 (#0)
+> GET /static/css/login.css HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.47.09d0fe68d5b1617654e596885c4e9b95b0ae5b9
 #### 实现情况
 a.首先是静态文件服务
 ```
@@ -104,9 +103,5 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/unknown
 * Connection #0 to host localhost left intact
 ```
 #### 拓展任务
-<<<<<<< HEAD
-对于拓展任务我写了博客，然后gbk转码代码还未测试，这边是代码链接https://github.com/caijh23/goWeb/tree/master/web/negroni-gbk，这边是博客链接
-=======
 对于拓展任务我写了博客，然后gbk转码代码还未测试，这边是代码链接https://github.com/caijh23/goWeb/tree/master/web/negroni-gbk</br>
 这边是博客链接
->>>>>>> 6d9d0fe68d5b1617654e596885c4e9b95b0ae5b9
