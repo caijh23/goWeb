@@ -71,8 +71,8 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/js
 ```
 提交表单并输出一个表格</br>
 这里我通过浏览器验证
-![Alt text](./1511446723010.png)
-![Alt text](./1511446743418.png)
+![Alt text](./pic/1511446723010.png)
+![Alt text](./pic/1511446743418.png)
 </br>
 对 /unknown 给出开发中的提示，返回码 5xx
 ```
