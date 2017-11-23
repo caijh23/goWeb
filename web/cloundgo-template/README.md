@@ -18,15 +18,6 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
 * Connected to localhost (::1) port 8080 (#0)
 > GET /static/css/login.css HTTP/1.1
 > Host: localhost:8080
-> User-Agent: curl/7.47.09d0fe68d5b1617654e596885c4e9b95b0ae5b9
-#### 实现情况
-a.首先是静态文件服务
-```
-caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
-*   Trying ::1...
-* Connected to localhost (::1) port 8080 (#0)
-> GET /static/css/login.css HTTP/1.1
-> Host: localhost:8080
 > User-Agent: curl/7.47.0
 > Accept: */*
 > 
@@ -58,7 +49,7 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/static/css/login.css
 * Connection #0 to host localhost left intact
 }
 ```
-b.支持简单的js访问</br>
+b.支持简单的js访问
 ```
 caijh@caijh-PC:~$ curl -v http://localhost:8080/js
 *   Trying ::1...
@@ -80,10 +71,10 @@ caijh@caijh-PC:~$ curl -v http://localhost:8080/js
 ```
 提交表单并输出一个表格</br>
 这里我通过浏览器验证
-![Alt text](./pic/1511446723010.png)
-![Alt text](./pic/1511446743418.png)
+![Alt text](./1511446723010.png)
+![Alt text](./1511446743418.png)
 </br>
-对 /unknown 给出开发中的提示，返回码 5xx</br>
+对 /unknown 给出开发中的提示，返回码 5xx
 ```
 caijh@caijh-PC:~$ curl -v http://localhost:8080/unknown
 *   Trying ::1...
